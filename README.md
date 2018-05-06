@@ -11,7 +11,10 @@ Final Project: List of “To-Do’s”
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)  Week 5/3 - 5/10
 
 -          Complete Game Sounds (Connecting Dots SFX, Scoring, Game Over, etc)
-  - Update (5/5/18): Completed the Main Menu BGM Sound. Completed the Settings Functionality for the Main Menu Sound Volume, User can adjust the volume of the BGM & Sound Effects used in the Main Menu areas. [BUG]: BGM only plays on the settings menu screen. Need to adjust it to work on all pages.
+  - Update (5/5/18): Completed the Main Menu BGM Sound. Completed the Settings Functionality for the Main Menu Sound Volume, User can adjust the volume of the BGM & Sound Effects used in the Main Menu areas. 
+  
+  - Update (5/5/18): Fixed [BUG : BGM only playing on Settings Page]
+  
 
 -          Create main menu text for the name of the game.
 
