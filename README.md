@@ -1,4 +1,4 @@
-# Final Project - Comp 437Comp437
+# Final Project - Comp 437
 
 Final Project: List of “To-Do’s”
 
