@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: ccedfd9ae278c664696389d830cf21da
+timeCreated: 1525936296
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Pacifico
+  fontNames:
+  - Pacifico
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4a2c0aaa400ffa54bb16a99aed567b2e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
