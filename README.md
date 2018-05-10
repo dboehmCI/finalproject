@@ -23,7 +23,7 @@ Final Project: List of “To-Do’s”
     - Prepped the BG for the Menu Animation (Circles spinning by Thursday).
     - Starting work on the drag and click functionality of the menu.
     - Cleaned up the Font
-      - All Font will now be utilizing 'Pacifico'
+      - All Font for the Main Menu UI will now be utilizing 'Pacifico' for transparency.
 
 -          Create a “Level Cleared” 
 
