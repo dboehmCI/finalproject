@@ -17,11 +17,15 @@ Final Project: List of “To-Do’s”
   
 
 -          Create main menu text for the name of the game.
+
   - Update (5/9/18): Reconstructing the Main BG:
     - Created the Main Main Text "LOGO"
     - Created a Universal BG for all the Main Menu Option transitions.
     - Prepped the BG for the Menu Animation (Circles spinning by Thursday).
     - Starting work on the drag and click functionality of the menu.
+    - Cleaned up the Font
+      - All Font for the Main Menu UI will now be utilizing 'Pacifico' for transparency.
+      
 
 -          Create a “Level Cleared” 
 
@@ -32,6 +36,7 @@ Final Project: List of “To-Do’s”
 -          Create a Fade-In (Load)
 
 -          Opening Menu Animation (Circles Loading)
+
 
 ![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  Week 5/10 - 5/17
 
