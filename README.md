@@ -22,6 +22,8 @@ Final Project: List of “To-Do’s”
     - Created a Universal BG for all the Main Menu Option transitions.
     - Prepped the BG for the Menu Animation (Circles spinning by Thursday).
     - Starting work on the drag and click functionality of the menu.
+    - Cleaned up the Font
+      - All Font will now be utilizing 'Pacifico'
 
 -          Create a “Level Cleared” 
 
