@@ -16,7 +16,7 @@ Final Project: List of “To-Do’s”
   - Update (5/5/18): Fixed [BUG : BGM only playing on Settings Page]
   
 
--          Create main menu text for the name of the game.
+-          Create main menu text for the name of the game. (Completed)
 
   - Update (5/9/18): Reconstructing the Main BG:
     - Created the Main Main Text "LOGO"
@@ -32,8 +32,10 @@ Final Project: List of “To-Do’s”
 -          Create a “Game Over” Screen
 
 -          Complete the Tutorial “How-to” option
+  - Update (5/10/18): Created the UI "How-To-Play" Button and Canvas Menu. Still working on implementing the best method to introduce the tutorial version of the game; whether to use scrollable images, a video demo, or demo scene. Pushing the tutorial mode to the last week.
 
 -          Create a Fade-In (Load)
+  - Update (5/10/18): Currently Fades White. Still working on a polished version of the game.
 
 -          Opening Menu Animation (Circles Loading)
 
