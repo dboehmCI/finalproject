@@ -37,6 +37,7 @@ Final Project: List of “To-Do’s”
 -          Create a Fade-In (Load)
   - Update (5/10/18): Currently Fades White. Still working on a polished version of the game.
   - Update (5/10/18): Scene Transitions are currently fading correctly. Still needing to implement a level 'pause' that allows the animation of the fading to complete before the level actually starts; providing enough time for the player to witness the transition and then be ready to play.
+  - Update (5/11/18): Changed the Transition Time to 8 seconds. Also created a delayed period of 8 seconds to allow the transition of the fade to complete before the actual game begins.
 
 -          Opening Menu Animation (Circles Loading) (Complete)
   - Update (5/10/18): Added the Animation Circles. 
