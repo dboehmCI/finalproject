@@ -37,7 +37,8 @@ Final Project: List of “To-Do’s”
 -          Create a Fade-In (Load)
   - Update (5/10/18): Currently Fades White. Still working on a polished version of the game.
 
--          Opening Menu Animation (Circles Loading)
+-          Opening Menu Animation (Circles Loading) (Complete)
+  - Update (5/10/18): Added the Animation Circles. 
 
 
 ![#1589F0](https://placehold.it/15/1589F0/000000?text=+)  Week 5/10 - 5/17
