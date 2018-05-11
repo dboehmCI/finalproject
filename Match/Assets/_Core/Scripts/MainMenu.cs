@@ -7,7 +7,6 @@ public class MainMenu : MonoBehaviour
 {
 
     public Image Black;
-    public Animator anim;
 
     [SerializeField] private float delay = 1f;
     public string level;
@@ -22,7 +21,6 @@ public class MainMenu : MonoBehaviour
     IEnumerator LevelLoad(string name)
     {
 
-        StartCoroutine(Fading());
         float elapsedTime = 0;
         float currentVolume = AudioListener.volume;
 
@@ -32,19 +30,14 @@ public class MainMenu : MonoBehaviour
             elapsedTime += Time.deltaTime;
             AudioListener.volume = Mathf.Lerp(currentVolume, 0, elapsedTime / delay);
         }
-       
 
-        yield return null;
+        // fade out the game and load a new level
+        float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        Application.LoadLevel(Application.loadedLevel + 1);
+      
     }
 
-    IEnumerator Fading()
-    {
-        anim.SetBool("Fade", true);
-        yield return new WaitForSeconds(3);
-        anim.SetBool("Fade", false);
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(level);
-    }
 
     public void OnMouseOver()
     {
