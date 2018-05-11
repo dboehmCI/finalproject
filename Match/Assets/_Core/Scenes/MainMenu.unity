@@ -453,11 +453,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 392583208}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -375.011, y: -666.76, z: 0}
-  m_LocalScale: {x: 0.8867356, y: 0.8867356, z: 0.8867356}
+  m_LocalPosition: {x: -375.05, y: -666.74, z: 0}
+  m_LocalScale: {x: 0.89572793, y: 0.89572793, z: 0.89572793}
   m_Children: []
   m_Father: {fileID: 2083387143}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &393679738
 GameObject:
@@ -835,11 +835,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 425452464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -374.96, y: -666.78, z: 0}
-  m_LocalScale: {x: 0.87201166, y: 0.87201166, z: 0.87201166}
+  m_LocalPosition: {x: -374.89, y: -666.81, z: 0}
+  m_LocalScale: {x: 0.79855007, y: 0.79855007, z: 0.79855007}
   m_Children: []
   m_Father: {fileID: 2083387143}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425452466
 MonoBehaviour:
@@ -2031,7 +2031,7 @@ Transform:
   m_LocalScale: {x: 0.911259, y: 0.911259, z: 0.911259}
   m_Children: []
   m_Father: {fileID: 2083387143}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &855880294
 MonoBehaviour:
@@ -2210,7 +2210,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2083387143}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3709,7 +3709,7 @@ RectTransform:
   m_Children:
   - {fileID: 2022156440}
   m_Father: {fileID: 2083387143}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4627,11 +4627,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1093996710}
+  - {fileID: 1788206936}
   - {fileID: 425452465}
   - {fileID: 855880293}
   - {fileID: 392583211}
-  - {fileID: 1093996710}
-  - {fileID: 1788206936}
   - {fileID: 2076065880}
   - {fileID: 692477573}
   - {fileID: 1639111120}
