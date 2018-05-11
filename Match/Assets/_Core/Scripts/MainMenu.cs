@@ -40,7 +40,9 @@ public class MainMenu : MonoBehaviour
     IEnumerator Fading()
     {
         anim.SetBool("Fade", true);
-        yield return new WaitUntil(() => Black.color.a == 1);
+        yield return new WaitForSeconds(3);
+        anim.SetBool("Fade", false);
+        yield return new WaitForSeconds(1);
         SceneManager.LoadScene(level);
     }
 
