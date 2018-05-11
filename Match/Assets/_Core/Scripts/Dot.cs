@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Code representation of a single dot.

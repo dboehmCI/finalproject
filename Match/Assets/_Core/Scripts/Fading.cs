@@ -36,6 +36,7 @@ public class Fading : MonoBehaviour {
     // OnLevelWasLoaded
     private void OnLevelWasLoaded()
     {
+        //Time.timeScale = 0;
         // alpha = -1;  // use this is the alpha is not set to 1 by default;
         BeginFade(-1);
     }

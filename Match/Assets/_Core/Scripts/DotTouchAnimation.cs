@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Handles code-based lerp animation for dots when selected

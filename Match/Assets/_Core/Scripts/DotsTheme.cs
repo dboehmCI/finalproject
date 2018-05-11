@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Defines a color scheme for the game

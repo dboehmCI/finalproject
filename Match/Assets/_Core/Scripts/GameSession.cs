@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Stores current game stats

@@ -1,4 +1,4 @@
-﻿namespace DotsClone
+﻿namespace MatchDot
 {
     /// <summary>
     /// Defines a dot's location in the dot grid

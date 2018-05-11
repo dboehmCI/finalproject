@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     [CustomEditor(typeof(Game))]
     public class GameInspector : Editor

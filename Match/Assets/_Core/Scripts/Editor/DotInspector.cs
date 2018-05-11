@@ -2,7 +2,7 @@
 using System.Collections;
 using UnityEditor;
 
-namespace DotsClone
+namespace MatchDot
 {
     [CustomEditor(typeof(Dot))]
     public class DotInspector : Editor

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// A reusable, consistent Singleton behavior base class

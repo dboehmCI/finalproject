@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Allows dots to manage incoming IO

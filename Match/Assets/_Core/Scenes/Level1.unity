@@ -1351,6 +1351,11 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 212906017252744398, guid: 7d38bd65158cb7a4688d0a4605cb2384,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 0.328
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7d38bd65158cb7a4688d0a4605cb2384, type: 2}
   m_IsPrefabParent: 0
@@ -1635,6 +1640,7 @@ MonoBehaviour:
   dotSpacing: 0.96
   dotPPU: 100
   respawnTimer: 5
+  delayPeriod: 8
 --- !u!4 &1630207040
 Transform:
   m_ObjectHideFlags: 0
@@ -1657,7 +1663,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 722938597
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 1
 --- !u!114 &1630207042
 MonoBehaviour:
   m_ObjectHideFlags: 0

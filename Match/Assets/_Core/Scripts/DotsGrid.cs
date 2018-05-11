@@ -4,17 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     [RequireComponent(typeof(ConnectionSystem))]
     public class DotsGrid : MonoBehaviour
     {
         private const float DOT_PIXEL_SIZE = 32f;
-
+        
 
         [SerializeField]
         private GameObject dotPrefab;
-
+       
         [SerializeField]
         private Dot preview;
 
@@ -34,78 +34,89 @@ namespace DotsClone
         bool showPreview = true;
 
         public float respawnTimer = 5f; // Every 5 seconds, a new dot will spawn.
-
+        public float delayPeriod = 8f; // Every 5 seconds, a new dot will spawn.
         public float dotSize { get { return DOT_PIXEL_SIZE / dotPPU; } }
+
 
         private void FixedUpdate()
         {
 
-            respawnTimer -= Time.deltaTime;
-            if (showPreview)
+            if (delayPeriod != 0)
             {
-                var types = Enum.GetValues(typeof(DotType));
-                preview.dotType = (DotType)UnityEngine.Random.Range(1, types.Length - 1);
-                showPreview = false;
-            }
-
-            if (respawnTimer < 0)
-            {
-                bool gameOver = true;
-                foreach (var d in dots)
+                if (delayPeriod > 0)
                 {
-                    if (d.dotType == DotType.Cleared)
-                    {
-                        gameOver = false;
-                    }
+                    delayPeriod -= Time.deltaTime;
                 }
-                if (gameOver == false)
+                else { delayPeriod = 0 * Time.deltaTime; BeginGame(); }
+            }
+            else
+            {
+                respawnTimer -= Time.deltaTime;
+                if (showPreview)
                 {
                     var types = Enum.GetValues(typeof(DotType));
-                    TimedDotSpawn(preview.dotType);
-                    showPreview = true;
-                    
+                    preview.dotType = (DotType)UnityEngine.Random.Range(1, types.Length - 1);
+                    showPreview = false;
                 }
-                respawnTimer = 1f;
-            }
 
+                if (respawnTimer < 0)
+                {
+                    bool gameOver = true;
+                    foreach (var d in dots)
+                    {
+                        if (d.dotType == DotType.Cleared)
+                        {
+                            gameOver = false;
+                        }
+                    }
+                    if (gameOver == false)
+                    {
+                        var types = Enum.GetValues(typeof(DotType));
+                        TimedDotSpawn(preview.dotType);
+                        showPreview = true;
+
+                    }
+                    respawnTimer = 1f;
+                }
+            }
+       
 
         }
-
         private void Awake()
         {
-           
             connectionSystem = gameObject.GetComponent<ConnectionSystem>();
             DotTouchIO.SelectionEnded += ClearSelectedDots;
             CreateDotObjects();
-
         }
-
-        private void Start()
+        void BeginGame()
         {
             
-            respawnTimer = 0;
-            ExecuteDotOperation((dot) =>
-            {
-                var targetPosition = GetPositionForCoordinates(dot.coordinates);
-                dot.SpawnCreate(targetPosition, 0.5f);
-            });
+                respawnTimer = 0;
+                ExecuteDotOperation((dot) =>
+                {
+                    var targetPosition = GetPositionForCoordinates(dot.coordinates);
+                    dot.SpawnCreate(targetPosition, 0.5f);
+                });
+            
         }
 
         private void CreateDotObjects()
         {
-            // Need to manually loop for dot creation
-            for (byte row = 0; row < rows; row++)
-            {
-                for (byte column = 0; column < columns; column++)
+           
+                // Need to manually loop for dot creation
+                for (byte row = 0; row < rows; row++)
                 {
-                    var dot = Instantiate(dotPrefab).GetComponent<Dot>();
-                
-                    dot.transform.parent = transform;
-                    dot.dotType = DotType.DotG;
-                    dot.coordinates = new GridCoordinates(column, row);
-                    dots.Add(dot);
+                    for (byte column = 0; column < columns; column++)
+                    {
+                        var dot = Instantiate(dotPrefab).GetComponent<Dot>();
+
+                        dot.transform.parent = transform;
+                        dot.dotType = DotType.DotG;
+                        dot.coordinates = new GridCoordinates(column, row);
+                        dots.Add(dot);
+                    }
                 }
-            }
+            
         }
 
         private Vector2 GetPositionForCoordinates(GridCoordinates position)

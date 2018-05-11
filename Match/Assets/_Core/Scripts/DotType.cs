@@ -1,4 +1,4 @@
-﻿namespace DotsClone
+﻿namespace MatchDot
 {
     /// <summary>
     /// An efficient, theme agnostic way of categorizing dots

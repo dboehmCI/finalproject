@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Subscribes to IO events from the Dots and follows

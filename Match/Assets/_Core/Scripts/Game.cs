@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DotsClone
+namespace MatchDot
 {
     /// <summary>
     /// Used to house widely used values and game configuration
