@@ -34,7 +34,7 @@ Final Project: List of “To-Do’s”
 -          Complete the Tutorial “How-to” option
   - Update (5/10/18): Created the UI "How-To-Play" Button and Canvas Menu. Still working on implementing the best method to introduce the tutorial version of the game; whether to use scrollable images, a video demo, or demo scene. Pushing the tutorial mode to the last week.
 
--          Create a Fade-In (Load)
+-          Create a Fade-In (Load) (Complete)
   - Update (5/10/18): Currently Fades White. Still working on a polished version of the game.
   - Update (5/10/18): Scene Transitions are currently fading correctly. Still needing to implement a level 'pause' that allows the animation of the fading to complete before the level actually starts; providing enough time for the player to witness the transition and then be ready to play.
   - Update (5/11/18): Changed the Transition Time to 8 seconds. Also created a delayed period of 8 seconds to allow the transition of the fade to complete before the actual game begins. 
