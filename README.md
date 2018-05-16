@@ -4,7 +4,7 @@ Final Project: List of “To-Do’s”
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  Week 4/26 - 5/3
--         Complete the Main Menu Scene and Implement Sounds.
+-         Complete the Main Menu Scene and Implement Sounds. (Completed)
 
   - Comments: I ended up breaking the AudioManager for my sounds, so I am currently correcting the audio. Implemented the "hover-over" audio sound for the menu options. When the mouse hovers over the menu ui, there will be a sound that plays. Need to correct the BGM audio + the level BGM transition.
 
