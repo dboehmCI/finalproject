@@ -14,6 +14,7 @@ Final Project: List of “To-Do’s”
   - Update (5/5/18): Completed the Main Menu BGM Sound. Completed the Settings Functionality for the Main Menu Sound Volume,  User can adjust the volume of the BGM & Sound Effects used in the Main Menu areas. 
   
   - Update (5/5/18): Fixed [BUG : BGM only playing on Settings Page]
+  - Update (5/16/18): Unable to get the Music/Sound Effects to Play After loading a new scene.
   
 
 -          Create main menu text for the name of the game. (Completed)
