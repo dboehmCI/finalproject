@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     public void LoadNextLevel(string level)
     {
         StartCoroutine(LevelLoad(level));
+        SceneManager.LoadScene(1);
     }
 
     //load level after one sceond delay
@@ -34,7 +35,7 @@ public class MainMenu : MonoBehaviour
         // fade out the game and load a new level
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        SceneManager.LoadScene(1);
+        
         
         
     }

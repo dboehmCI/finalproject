@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fading : MonoBehaviour {
+
 
     public Texture2D fadeOutTexture;    // the texture that will overlay the screen. This can be a black image or a loading graphic
     public float fadeSpeed = 0.8f;      // the fading speed
@@ -33,11 +35,23 @@ public class Fading : MonoBehaviour {
         return (fadeSpeed);
     }
 
-    // OnLevelWasLoaded
-    private void OnLevelWasLoaded()
+    void OnEnable()
     {
-        //Time.timeScale = 0;
-        // alpha = -1;  // use this is the alpha is not set to 1 by default;
+        //Tell our 'OnLevelFinishedLoading' function to start listening for a scene change as soon as this script is enabled.
+        SceneManager.sceneLoaded += OnLevelFinishedLoading;
+    }
+
+    void OnDisable()
+    {
+        //Tell our 'OnLevelFinishedLoading' function to stop listening for a scene change as soon as this script is disabled. Remember to always have an unsubscription for every delegate you subscribe to!
+        SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+    }
+
+    void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
         BeginFade(-1);
+        Debug.Log("Level Loaded");
+        Debug.Log(scene.name);
+        Debug.Log(mode);
     }
 }
