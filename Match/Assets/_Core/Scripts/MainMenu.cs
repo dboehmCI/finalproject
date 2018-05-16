@@ -11,6 +11,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private float delay = 1f;
     public string level;
 
+    private float elapsedTime;
+    private float currentVolume;
+
     //function to be called on button click
     public void LoadNextLevel(string level)
     {
@@ -22,22 +25,22 @@ public class MainMenu : MonoBehaviour
     IEnumerator LevelLoad(string name)
     {
 
-        float elapsedTime = 0;
-        float currentVolume = AudioListener.volume;
-
-      
+        currentVolume = AudioListener.volume;
+        elapsedTime = 0;
         while (elapsedTime < delay)
         {
             elapsedTime += Time.deltaTime;
-            AudioListener.volume = Mathf.Lerp(currentVolume, 0, elapsedTime / delay);
+           AudioListener.volume = Mathf.Lerp(currentVolume, 0, elapsedTime / delay);
         }
 
         // fade out the game and load a new level
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
+        elapsedTime = 0;
         yield return new WaitForSeconds(fadeTime);
         
-        
-        
+
+
+
     }
 
 
