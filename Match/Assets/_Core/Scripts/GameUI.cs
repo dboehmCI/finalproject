@@ -15,7 +15,6 @@ namespace MatchDot
         private int dotsCleared;
         private float dotsClearedLerp;
         public AudioSource dotsScored;
-        public AudioClip scored;
         public int temp;
         public bool soundPlayed;
         private float delay;

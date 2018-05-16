@@ -7,12 +7,14 @@ namespace MatchDot
     /// </summary>
     public class Game : Singleton<Game>
     {
+       
+
         public bool useRandomSeed = true;
         public int seed;
 
         public GameSession session { get; private set; }
         public DotsTheme selectedTheme = DotsTheme.defaultTheme;
-
+     
         protected override void Awake()
         {
             base.Awake();
@@ -23,6 +25,10 @@ namespace MatchDot
             session = new GameSession();
             Camera.main.backgroundColor = selectedTheme.backgroundColor;
 
+
+
         }
+       
+    
     }
 }
