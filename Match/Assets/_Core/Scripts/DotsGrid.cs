@@ -32,7 +32,7 @@ namespace MatchDot
 
         private ConnectionSystem connectionSystem;
         bool showPreview = true;
-
+        
         public float respawnTimer = 5f; // Every 5 seconds, a new dot will spawn.
         public float delayPeriod = 8f; // Every 5 seconds, a new dot will spawn.
         public float dotSize { get { return DOT_PIXEL_SIZE / dotPPU; } }
