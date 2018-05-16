@@ -4,7 +4,7 @@ Final Project: List of “To-Do’s”
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  Week 4/26 - 5/3
--         Complete the Main Menu Scene and Implement Sounds.
+-         Complete the Main Menu Scene and Implement Sounds. (Completed)
 
   - Comments: I ended up breaking the AudioManager for my sounds, so I am currently correcting the audio. Implemented the "hover-over" audio sound for the menu options. When the mouse hovers over the menu ui, there will be a sound that plays. Need to correct the BGM audio + the level BGM transition.
 
@@ -34,9 +34,10 @@ Final Project: List of “To-Do’s”
 -          Complete the Tutorial “How-to” option
   - Update (5/10/18): Created the UI "How-To-Play" Button and Canvas Menu. Still working on implementing the best method to introduce the tutorial version of the game; whether to use scrollable images, a video demo, or demo scene. Pushing the tutorial mode to the last week.
 
--          Create a Fade-In (Load)
+-          Create a Fade-In (Load) (Complete)
   - Update (5/10/18): Currently Fades White. Still working on a polished version of the game.
   - Update (5/10/18): Scene Transitions are currently fading correctly. Still needing to implement a level 'pause' that allows the animation of the fading to complete before the level actually starts; providing enough time for the player to witness the transition and then be ready to play.
+  - Update (5/11/18): Changed the Transition Time to 8 seconds. Also created a delayed period of 8 seconds to allow the transition of the fade to complete before the actual game begins. 
 
 -          Opening Menu Animation (Circles Loading) (Complete)
   - Update (5/10/18): Added the Animation Circles. 
@@ -47,5 +48,9 @@ Final Project: List of “To-Do’s”
 -          Progress of game from Last Play should be saved.
 
 -          Create Multiple Levels
+-          Add Objective Tasks Prior to Levels Loading
+  - Get a score of 10.
+  - Connect a total of 10 Blue Dots.
+  - ETC...
 
 
