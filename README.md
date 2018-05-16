@@ -4,9 +4,10 @@ Final Project: List of “To-Do’s”
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  Week 4/26 - 5/3
--         Complete the Main Menu Scene and Implement Sounds. (Completed)
+-         Complete the Main Menu Scene and Implement Sounds. (See Update 5/16/18 BUG)
 
   - Comments: I ended up breaking the AudioManager for my sounds, so I am currently correcting the audio. Implemented the "hover-over" audio sound for the menu options. When the mouse hovers over the menu ui, there will be a sound that plays. Need to correct the BGM audio + the level BGM transition.
+  - Update (5/16/18): [BUG: Audio stops on scene transitions] - I am unsure as to why but ALL audio including sound effects stop working after a scene transition has occurred. It is weird because this does not occur when loading each scene individually, only when a scene transition occurs. I am not sure if this bug will be fixed by deadline, I will need to come back to this.
 
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)  Week 5/3 - 5/10
 
