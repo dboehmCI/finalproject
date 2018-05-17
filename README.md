@@ -4,7 +4,7 @@ Final Project: List of “To-Do’s”
 
 
 ![#f03c15](https://placehold.it/15/f03c15/000000?text=+)  Week 4/26 - 5/3
--         Complete the Main Menu Scene and Implement Sounds. (See Update 5/16/18 BUG)
+-         Complete the Main Menu Scene and Implement Sounds. (Complete)
 
   - Comments: I ended up breaking the AudioManager for my sounds, so I am currently correcting the audio. Implemented the "hover-over" audio sound for the menu options. When the mouse hovers over the menu ui, there will be a sound that plays. Need to correct the BGM audio + the level BGM transition.
   - Update (5/16/18): [BUG: Audio stops on scene transitions] - I am unsure as to why but ALL audio including sound effects stop working after a scene transition has occurred. It is weird because this does not occur when loading each scene individually, only when a scene transition occurs. I am not sure if this bug will be fixed by deadline, I will need to come back to this.
@@ -12,7 +12,7 @@ Final Project: List of “To-Do’s”
 
 ![#c5f015](https://placehold.it/15/c5f015/000000?text=+)  Week 5/3 - 5/10
 
--          Complete Game Sounds (Connecting Dots SFX, Scoring, Game Over, etc)
+-          Complete Game Sounds (Connecting Dots SFX, Scoring, Game Over, etc) (Complete)
   - Update (5/5/18): Completed the Main Menu BGM Sound. Completed the Settings Functionality for the Main Menu Sound Volume,  User can adjust the volume of the BGM & Sound Effects used in the Main Menu areas. 
   
   - Update (5/5/18): Fixed [BUG : BGM only playing on Settings Page]
@@ -30,7 +30,8 @@ Final Project: List of “To-Do’s”
       - All Font for the Main Menu UI will now be utilizing 'Pacifico' for transparency.
       
 
--          Create a “Level Cleared” 
+-          Create a “Level Cleared” (Complete)
+  -  Update (5/17/18): Level Cleared Screens appears after each level objective has been completed. Player then can click the next level button to advance.
 
 -          Create a “Game Over” Screen
 
@@ -50,10 +51,10 @@ Final Project: List of “To-Do’s”
 
 -          Progress of game from Last Play should be saved.
 
--          Create Multiple Levels
--          Add Objective Tasks Prior to Levels Loading
-  - Get a score of 10.
-  - Connect a total of 10 Blue Dots.
-  - ETC...
+-          Create Multiple Levels (Complete)
+-          Add Objective Tasks Prior to Levels Loading (Complete)
+  - Get a score of 10
+  - Get a score of 20
+  - Get a score of 30
 
 
