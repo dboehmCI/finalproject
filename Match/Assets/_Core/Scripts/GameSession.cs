@@ -15,6 +15,6 @@ namespace MatchDot
         public bool gameOver = false;
         public int dotsCleared { get; set; }
        
-
+        
     }
 }

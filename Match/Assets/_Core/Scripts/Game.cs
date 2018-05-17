@@ -12,7 +12,7 @@ namespace MatchDot
         public bool useRandomSeed = true;
         public int seed;
 
-        public GameSession session { get; private set; }
+        public GameSession session { get; set; }
         public DotsTheme selectedTheme = DotsTheme.defaultTheme;
      
         protected override void Awake()
@@ -25,7 +25,7 @@ namespace MatchDot
             session = new GameSession();
             Camera.main.backgroundColor = selectedTheme.backgroundColor;
 
-
+            
 
         }
        

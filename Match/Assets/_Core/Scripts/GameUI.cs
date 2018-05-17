@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace MatchDot
 {
@@ -12,18 +13,63 @@ namespace MatchDot
         
         public Text dotsClearedLabel;
 
-        private int dotsCleared;
+        public int dotsCleared;
         private float dotsClearedLerp;
         public AudioSource dotsScored;
+        public AudioSource LevelComplete;
         public int temp;
         public bool soundPlayed;
+        public bool LevelSoundPlayed;
         private float delay;
-       
+        public Canvas LevelStatus;
+        public int currLevel;
+
 
         private void Update()
         {
 
 
+            if (currLevel == 1)
+            {
+                if (dotsCleared >= 10)
+                {
+                    LevelStatus.gameObject.SetActive(true);
+                    if (LevelSoundPlayed == false)
+                    {
+                        LevelComplete.Play();
+                        LevelSoundPlayed = true;
+                        Debug.Log("I played");
+                    }
+                }
+            }
+            else if (currLevel == 2)
+            {
+                
+                if (dotsCleared >= 20)
+                {
+                    LevelStatus.gameObject.SetActive(true);
+                    if (LevelSoundPlayed == false)
+                    {
+                        LevelComplete.Play();
+                        LevelSoundPlayed = true;
+                        Debug.Log("I played");
+                    }
+                }
+            }
+            else if (currLevel == 3)
+            {
+                
+                if (dotsCleared > 30)
+                {
+                    LevelStatus.gameObject.SetActive(true);
+                    if (LevelSoundPlayed == false)
+                    {
+                        LevelComplete.Play();
+                        LevelSoundPlayed = true;
+                        Debug.Log("I played");
+                    }
+                }
+            }
                 // Could be more efficient using events, but good enough
                 dotsClearedLerp = Mathf.Lerp(dotsClearedLerp, Game.get.session.dotsCleared, Time.deltaTime * 3f);
                 dotsCleared = Mathf.CeilToInt(dotsClearedLerp);
@@ -57,8 +103,12 @@ namespace MatchDot
 
         private void Awake()
         {
+            dotsCleared = 0;
+            dotsClearedLabel.text = dotsCleared.ToString();
+            currLevel = SceneManager.GetActiveScene().buildIndex;
             temp = dotsCleared;
             soundPlayed = false;
+            LevelSoundPlayed = false;
             delay = 0;
         }
      

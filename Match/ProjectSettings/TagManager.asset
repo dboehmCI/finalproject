@@ -6,6 +6,9 @@ TagManager:
   tags:
   - preview
   - Music
+  - LevelTitle
+  - LevelCleared
+  - GameOver
   layers:
   - Default
   - TransparentFX

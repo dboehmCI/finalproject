@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public Image Black;
 
-    [SerializeField] private float delay = 1f;
+    [SerializeField] private float delay = 100f;
     public string level;
 
     private float elapsedTime;
@@ -18,7 +18,7 @@ public class MainMenu : MonoBehaviour
     public void LoadNextLevel(string level)
     {
         StartCoroutine(LevelLoad(level));
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     //load level after one sceond delay
@@ -37,9 +37,6 @@ public class MainMenu : MonoBehaviour
         float fadeTime = GameObject.Find("_GM").GetComponent<Fading>().BeginFade(1);
         elapsedTime = 0;
         yield return new WaitForSeconds(fadeTime);
-        
-
-
 
     }
 
