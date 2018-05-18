@@ -19,6 +19,7 @@ namespace MatchDot
         private void Awake()
         {
             dot = GetComponent<Dot>();
+
         }
 
         public delegate void OnSelectionStarted();

@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private float delay = 100f;
     public string level;
-
+    private int numLevel;
     private float elapsedTime;
     private float currentVolume;
 
@@ -18,7 +18,17 @@ public class MainMenu : MonoBehaviour
     public void LoadNextLevel(string level)
     {
         StartCoroutine(LevelLoad(level));
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        if (level == "Level1")
+            numLevel = 1;
+        else if (level == "Level2")
+            numLevel = 2;
+        else if (level == "Level3")
+            numLevel = 3;
+        else
+            numLevel = 0;
+
+        SceneManager.LoadScene(numLevel);
     }
 
     //load level after one sceond delay

@@ -15,7 +15,10 @@ namespace MatchDot
         {
             sprite = GetComponent<SpriteRenderer>();
             ConnectionSystem.DotConnected += RunTouchAnimation;
+           
+
         }
+
 
         private void RunTouchAnimation(Dot dot)
         {

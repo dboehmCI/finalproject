@@ -29,6 +29,7 @@ namespace MatchDot
 
         private List<Dot> dots = new List<Dot>();
         private List<Dot> GridDots = new List<Dot>();
+        private float timeLeft;
 
         private ConnectionSystem connectionSystem;
         bool showPreview = true;
@@ -76,6 +77,13 @@ namespace MatchDot
                         showPreview = true;
 
                     }
+                    else
+                    {
+                       
+                            Game.get.session.gameOver = true;
+                        
+                        
+                    }
                     respawnTimer = 1f;
                 }
             }
@@ -84,6 +92,7 @@ namespace MatchDot
         }
         private void Awake()
         {
+            timeLeft = 3f;
             connectionSystem = gameObject.GetComponent<ConnectionSystem>();
             DotTouchIO.SelectionEnded += ClearSelectedDots;
             CreateDotObjects();

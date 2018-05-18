@@ -48,7 +48,7 @@ namespace MatchDot
                     }
                     else if (allInstances.Length == 0)
                     {
-                        _get = new GameObject("[Singleton] " + typeof(T).Name).AddComponent<T>();
+                        _get = new GameObject("[Game] " + typeof(T).Name).AddComponent<T>();
                     }
                     else
                     {
@@ -59,6 +59,7 @@ namespace MatchDot
             }
         }
 
+    
         protected virtual void Awake()
         {
             if (_get != null)

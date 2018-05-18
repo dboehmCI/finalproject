@@ -8,7 +8,7 @@ public class SwitchMusicOnLoad : MonoBehaviour {
     private AudioManager theAM;
     private float elapsedTime;
     private float currentVolume;
-    private float delay = 8;
+   
 
     // Use this for initialization
     void Start () {
