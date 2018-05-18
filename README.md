@@ -35,7 +35,8 @@ Final Project: List of “To-Do’s”
 
 -          Create a “Game Over” Screen (Complete)
 
--          Complete the Tutorial “How-to” option (Incomplete)
+-          Complete the Tutorial “How-to” option (Complete)
+  - Update (5/17/18): Implemented the Tutorial How To Option on Main Menu. Slides show the player a quick 'how-to' of the game.
   - Update (5/10/18): Created the UI "How-To-Play" Button and Canvas Menu. Still working on implementing the best method to introduce the tutorial version of the game; whether to use scrollable images, a video demo, or demo scene. Pushing the tutorial mode to the last week.
 
 -          Create a Fade-In (Load) (Complete)
